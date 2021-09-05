@@ -1,0 +1,6 @@
+// Route::get('/', 'App\Http\Controllers\SiteController@Home');
+// Route::get('/', [App\Http\Controllers\SiteController::class, 'Home']);
+// Route::get('/about', [App\Http\Controllers\SiteController::class, 'About']);
+Route::group(['namespace'=>'App\Http\Controllers'],function(){
+    Route::get('/', 'SiteController@Home');
+});
